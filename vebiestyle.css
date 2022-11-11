@@ -1,0 +1,149 @@
+html{
+    background-color: rgb(88, 186, 243)
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    width: 80%;
+    display: grid;
+    grid-template-areas: 
+    "profil"
+    "intro"
+    "menu"
+    "biodata"
+    "pendidikan"
+    "pengalaman"
+    "kontak";
+    gap: 20 px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.vebiecv-foto{
+    margin-top: 10px;
+    background-image: url(foto/vebiecv.jpeg);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    grid-area: profil;
+    justify-self: center;
+    border: 2px solid white;
+
+}
+
+.panel-intro{
+    grid-area: intro;
+    justify-self: center;
+    justify-content: center;
+}
+
+.panel-intro .intro{
+    font-size: 1.4em;
+}
+
+.panel-intro .intro2{
+    font-size: 1em;
+    
+}
+
+.wrapper {
+	width: 1100px;
+	margin: auto;
+}
+
+.menu {
+	float: left;
+}
+
+nav {
+	width: 100%;
+	margin-top: 20px;
+	display: flex;
+	line-height: 80px;
+	top: 0;
+	background: black;
+
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+nav ul li {
+	float: left;
+}
+
+nav ul li a {
+	color: rgb(235, 247, 247);
+	font-weight: bold;
+	text-align: center;
+	padding: 0px 15px 0px 15px;
+	text-decoration: none;
+}
+
+h1{
+background-color: rgb(235, 247, 247);
+padding: 4px;
+}
+
+h4{
+color: rgb(235, 247, 247);
+background-color: black;
+padding: 3px;
+}
+
+.tabel {
+	margin-left: 40px;
+	margin-bottom: 40px;
+	margin-right: 40px;
+}
+
+.link tr td a{
+	color: black;
+	font-style: italic;
+	font-family: sans-serif;
+	text-decoration: none;
+}
+
+.footer {
+	width: 100%;
+	margin: all;
+	position: relative;
+	display: flex;
+	line-height: 30px;
+	top: 0;
+	background: rgb(235, 247, 247);
+	justify-content: center;
+}
+
+.footer ul li a {
+	color: black;
+	font-weight: bold;
+	padding: 0px 15px 0px 15px;
+}
+
+.BIODATA{
+    grid-area: biodata;
+}
+
+.PENDIDIKAN{
+    grid-area: pendidikan;
+}
+
+.PENGALAMAN{
+    grid-area: pengalaman;
+}
+
+.KONTAK{
+    grid-area: kontak;
+}
+
